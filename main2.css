@@ -47,7 +47,7 @@ a:visited{
     align-items: center;
     height: 50vh;
     width: 90%;
-    margin: 25vh auto;
+    margin: 20vh auto;
     border: solid #000 1px;
 }
 
@@ -72,9 +72,10 @@ a:visited{
     justify-content: space-between;
 }
 
-.portfolio_title {
+.title {
     text-align: left;
     margin: 0 100px;
+    padding-top: 20px;
 }
 .portfolio_item {
     margin: 5px auto;
@@ -82,7 +83,8 @@ a:visited{
     border: solid #000 1px;
     display: flex;
     align-items: center;
-    }
+}
+
 
 .portfolio .photo img {
     margin: 5px;
@@ -94,4 +96,106 @@ a:visited{
     margin: 10px;
     padding: 5px;
     flex: 0 0 34%;
+}
+
+.portfolio .desc img{
+    width: 15%;
+    margin: 5px;
+}
+
+@media screen and (max-width: 1315px ) { 
+
+    header {
+        background-image: url('images/header.jpg');
+        background-size: cover;
+        height: 100vh;
+    }
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .portfolio_item {
+        margin: 5px auto;
+        flex: 0 100%;
+        border: solid #000 1px;
+        display: flex;
+        align-items: center;
+    }
+
+    .portfolio .photo img {
+        margin: 5px;
+        padding: 0px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 915px ) { 
+    .portfolio .photo img {
+        margin: 5px;
+        padding: 0px;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 465px ) { 
+
+    .nav {
+         padding: 40px 0;
+    }
+
+    .nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    .nav li {
+        display: inline;
+        font-size: 10px;
+        padding: 5px 5px;
+        margin: 5px 5px;
+    }
+
+    .nav li:hover{
+        border: solid #000 1px;
+    }
+
+    .page_title {
+        padding: 20px 0 10px 0;
+    }
+
+    .title {
+        text-align: left;
+        margin: 0 50px;
+        padding-top: 20px;
+    }
+
+    .about {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 30vh;
+        width: 90%;
+        margin: 20px auto;
+        border: solid #000 1px;
+    }
+
+    .about img {
+        width: 20%;
+        padding: 5px;
+        margin: auto 15px;
+        border: solid #000 1px;
+    }
+
+    .about p {
+        padding: 5px;
+        font-size: 10px;
+        margin: auto 15px;
+    }
+    .portfolio .photo img {
+        margin: 5px;
+        padding: 0px;
+        width: 150px;
+    }
 }

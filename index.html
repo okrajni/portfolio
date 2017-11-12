@@ -39,7 +39,9 @@
           <h2>portfolio</h2>
         </div>
       </header>
-      <div id="about"> </div>
+      <div class="title" id="about">
+        <h1>about.</h1>
+      </div>
       <div class="about main">
         <img src="images/jo.jpg">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -47,49 +49,97 @@
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
         </div>
 
-        <div class="portfolio_title" id="projects">
-            <h1>projects.</h1>
-          </div>
+        <div class="title" id="projects">
+          <h1>projects.</h1>
+        </div>
         <div class="portfolio" >
           <div class="portfolio_item">
             <div class="photo">
               <img src ="images/pic.jpg"/>
             </div>
-            <div class="desc">LOREM IPSUM</div>
+            <div class="desc">
+              <p>LOREM IPSUM</p>
+              <div>
+                <a href=#><img src="images/github.svg"></a>
+                <a href=#><img src="images/url.png"></a>
+              </div>
+            </div>
           </div>
           <div class="portfolio_item">
             <div class="photo">
               <img src ="images/pic.jpg"/>
             </div>
-            <div class="desc">LOREM IPSUM</div>
+            <div class="desc">
+              <p>LOREM IPSUM</p>
+              <div>
+                <a href=#><img src="images/github.svg"></a>
+                <a href=#><img src="images/url.png"></a>
+              </div>
+            </div>
           </div>
           <div class="portfolio_item">
             <div class="photo">
               <img src ="images/pic.jpg"/>
             </div>
-            <div class="desc">LOREM IPSUM</div>
+            <div class="desc">
+              <p>LOREM IPSUM</p>
+              <div>
+                <a href=#><img src="images/github.svg"></a>
+                <a href=#><img src="images/url.png"></a>
+              </div>
+            </div>
           </div>
           <div class="portfolio_item">
             <div class="photo">
               <img src ="images/pic.jpg"/>
             </div>
-            <div class="desc">LOREM IPSUM</div>
+            <div class="desc">
+              <p>LOREM IPSUM</p>
+              <div>
+                <a href=#><img src="images/github.svg"></a>
+                <a href=#><img src="images/url.png"></a>
+              </div>
+            </div>
           </div>
           <div class="portfolio_item">
             <div class="photo">
               <img src ="images/pic.jpg"/>
             </div>
-            <div class="desc">LOREM IPSUM</div>
+            <div class="desc">
+              <p>LOREM IPSUM</p>
+              <div>
+                <a href=#><img src="images/github.svg"></a>
+                <a href=#><img src="images/url.png"></a>
+              </div>
+            </div>
           </div>
           <div class="portfolio_item">
             <div class="photo">
               <img src ="images/pic.jpg"/>
             </div>
-            <div class="desc">LOREM IPSUM</div>
+            <div class="desc">
+              <p>LOREM IPSUM</p>
+              <div>
+                <a href=#><img src="images/github.svg"></a>
+                <a href=#><img src="images/url.png"></a>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div class="title" id="techlogies">
+          <h1>technologies.</h1>
+        </div>
+
+        <div class="title" id="experience">
+          <h1>experience.</h1>
+        </div>
+
+        <div class="title" id="contact">
+          <h1>contact.</h1>
         </div>
 
 
@@ -109,13 +159,19 @@
           scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
       });
-      $(document).on('click', 'a[href^="#photos"]', function (event) {
+      $(document).on('click', 'a[href^="#techlogies"]', function (event) {
         event.preventDefault();
         $('html, body').animate({
           scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
       });
-      $(document).on('click', 'a[href^="#footer"]', function (event) {
+      $(document).on('click', 'a[href^="#experience"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+      $(document).on('click', 'a[href^="#contact"]', function (event) {
         event.preventDefault();
         $('html, body').animate({
           scrollTop: $($.attr(this, 'href')).offset().top
