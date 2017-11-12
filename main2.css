@@ -1,0 +1,125 @@
+body {
+    background-color: #DCDCDC;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+}
+
+/*GRID HEADER*/
+
+.page_grid {
+    /*display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh auto 30vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";*/
+    text-align: center;
+}
+
+header {
+    background-image: url('images/header.jpg');
+    width: cover;
+    background-size: 100%;
+    height: 100vh;
+}
+
+.nav {
+     padding: 60px 20px;
+     /*background-color: blue;*/
+}
+.nav li {
+    display: inline;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    /*background-color: red;*/
+}
+
+.nav li:hover{
+    border: solid #000 1px;
+}
+
+.page_title {
+    padding: 80px 0 20px 0;
+    /*background-color: yellow;*/
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited{
+  color: #000;
+  text-decoration: none;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    width: 90%;
+    margin: 25vh auto;
+    border: solid #000 1px;
+    background-color: #fff;
+}
+
+.about img {
+    width: 20%;
+    padding: 5px;
+    margin: auto 55px;
+    border: solid #000 1px;
+}
+
+.about p {
+    padding: 5px;
+    font-size: 24px;
+    margin: auto 55px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    width: 1300px;
+    justify-content: space-between;
+    /*background-color: red;*/
+}
+
+.portfolio_title {
+    text-align: left;
+    margin: 0 100px;
+}
+.portfolio_item {
+    margin: 5px auto;
+    flex: 0 0 49%;
+    border: solid #000 1px;
+    display: flex;
+    align-items: center;
+    /*background-color: blue;*/
+    }
+
+/*.portfolio .photo{
+    margin: 5px;
+    padding: 0px;
+    width: 50%;
+    background-color: red;
+}*/
+
+
+
+.portfolio .photo img {
+    margin: 5px;
+    padding: 0px;
+    width: 380px;
+    background-color: red;
+}
+
+.portfolio .desc {
+    margin: 10px;
+    padding: 5px;
+    flex: 0 0 34%;
+}
